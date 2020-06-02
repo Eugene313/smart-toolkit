@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'GothamPro Regular';
+  src: url('../fonts/GothamPro.eot');
+  src: local('GothamPro'), url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro.woff2') format('woff2'),
+  url('../fonts/GothamPro.woff') format('woff'),
+  url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamPro Medium';
+  src: url('../fonts/GothamProMedium.eot');
+  src: local('GothamProMedium'), url('../fonts/GothamProMedium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamProMedium.woff2') format('woff2'),
+  url('../fonts/GothamProMedium.woff') format('woff'),
+  url('../fonts/GothamProMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: SmarttenderFont;
+  src: url('../fonts/SmarttenderFont.eot');
+  src: url('../fonts/SmarttenderFont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SmarttenderFont.svg') format('svg'),
+    url('../fonts/SmarttenderFont.woff2') format('woff2'),
+    url('../fonts/SmarttenderFont.woff') format('woff'),
+    url('../fonts/SmarttenderFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

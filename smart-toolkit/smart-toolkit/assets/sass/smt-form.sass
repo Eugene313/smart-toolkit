@@ -1,0 +1,134 @@
+.smt-login-form
+  width: 270px
+  .smt-login-form-title
+    font-size: 30px
+    color: #36526c
+    text-align: center
+.smt-input
+  position: relative
+  width: 100%
+  .smart-input-value
+    padding: 12px
+    background: #edf2f7
+    border: 1px solid #ffffff00
+    border-radius: 6px
+    width: 100%
+    font-size: 14px
+    cursor: pointer
+    color: #495060
+    &:focus
+      border-color: #91C44E !important
+      outline: none
+      background: white !important
+    &::placeholder
+      color: #aaaaaa
+  .smt-input-with-value
+    background: white !important
+    border-color: #91C44E !important
+  .smt-input-disabled
+    .smart-input-value
+      background: #f9f9f9
+      color: #7e7e7e
+      cursor: not-allowed
+  .input-icon
+    position: absolute
+    cursor: pointer
+    top: 0
+    right: 0
+    width: 35px
+    height: 42px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #adc0d3
+    &:hover
+      color: #014a90
+.smt-input-with-icon
+  .smart-input-value
+    padding: 12px 35px 12px 12px
+.smt-form-item
+  position: relative
+.smt-form-item-wrap
+  .smt-form-label
+    position: relative
+    font-size: 12px
+    display: inline-block
+    margin-bottom: 6px
+    line-height: 11px
+    color: #4a4a4a
+    font-weight: 400
+.smt-form-item-required
+  .smt-form-label
+    &:before
+      position: absolute
+      content: '*'
+      font-size: 16px
+      color: #a7676f
+      top: 1px
+      left: -9px
+.smt-form-item-error
+  .smt-input
+    .smart-input-value
+      border: 1px solid #a7676f
+      animation: error
+      animation-duration: .6s
+      animation-timing-function: linear
+  @mixin input-message-before
+    content: ''
+    position: absolute
+    top: 12px
+    left: -5px
+    border-radius: 1px
+    width: 12px
+    height: 12px
+    transform: rotateZ(45deg)
+    animation: infoBefore
+    animation-duration: .5s
+    animation-timing-function: linear
+  .smt-form-input-message
+    position: absolute
+    right: -248px
+    top: 0
+    width: 240px
+    border-radius: 5px
+    box-shadow: 0 0 1px 0
+    font-size: 14px
+    color: #4a4a4a
+    animation: info
+    animation-duration: .5s
+    animation-timing-function: linear
+    .smt-form-input-message-default
+      padding: 10px 9px 10px 16px
+      background: #f6f3de
+      border-radius: 5px
+      &:before
+        @include input-message-before
+        background: #f6f3de
+    .smt-form-input-message-error
+      padding: 10px 9px 10px 16px
+      background: #F5CACA
+      border-radius: 5px
+      &:before
+        @include input-message-before
+        background: #F5CACA
+@-webkit-keyframes error
+  0%
+    border: 1px solid #a7676f00
+    box-shadow: none
+  50%
+    border: 1px solid #a7676f50
+    box-shadow: 0 0 12px 0 #a7676f50
+  100%
+    border: 1px solid #a7676f
+    box-shadow: none
+@-webkit-keyframes info
+  0%
+    transform: rotateX(-35deg)
+    box-shadow: 0 0 5px 0 #00000030
+  50%
+    transform: rotateX(35deg)
+    box-shadow: 0 0 5px 0 #00000030
+  100%
+    transform: rotateX(0deg)
+    box-shadow: none
+
